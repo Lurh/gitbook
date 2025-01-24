@@ -33,7 +33,7 @@ update-gh-pages:
 
 	# 4. 复制 _book 中的内容到当前目录
 	cp -r ../gitbook_private/_book/* .
-	cp Makefile_bak Makefile
+	cp ../gitbook_private/Makefile.gitbook ./Makefile
 	echo "blog.runhao.life" >> CNAME # 如果需要替换个人域名，修改这里
 
 	# 5. 添加更改到 git 并提交
