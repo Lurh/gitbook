@@ -23,7 +23,7 @@ update-gh-pages:
 	echo "_book" >> .gitignore
 	echo "draft" >> .gitignore
 	echo ".DS_Store" >> .gitignore
-# 	echo "Makefile_bak" >> .gitignore
+#	echo "Makefile_bak" >> .gitignore
 	echo "node_modules" >> .gitignore
 	echo ".gitignore" >> .gitignore
 	
