@@ -9,37 +9,29 @@ CURRENT_DATE := $(shell date +'%Y-%m-%d')
 COMMIT_MSG = "文档更新: $(CURRENT_DATE)"
 
 # 目标：默认目标会运行 `make all`
-all: update-gh-pages
+all: commit-and-update-gh-pages
 
 new-gh-pages-branch:
 	git checkout --orphan gh-pages
 
-# 目标：更新 gh-pages 分支
-update-gh-pages:
-	# 1. 创建并切换到孤立的 gh-pages 分支
+# 通过提交更新并构建新的文档，更新 GitHub Pages
+commit-and-update-gh-pages: commit-changes build-book update-gh-pages
 
-	# 2. 创建 .gitignore 文件
-	echo "*~" > .gitignore
-	echo "_book" >> .gitignore
-	echo "draft" >> .gitignore
-	echo ".DS_Store" >> .gitignore
-# 	echo "Makefile_bak" >> .gitignore
-	echo "node_modules" >> .gitignore
-	echo ".gitignore" >> .gitignore
-	
-	# 3. 删除所有缓存的文件，清理未追踪的文件并删除所有备份文件
-	git rm --cached -r -q .
-	git clean -df -q
-	rm -rf *~
+# 提交更改并推送到主分支
+commit-changes:
+	@echo "Committing changes with message: $(COMMIT_MSG)"
+	git add .
+	git commit -m '$(COMMIT_MSG)'
+	git push -u origin main
 
-	# 4. 复制 _book 中的内容到当前目录
-	cp -r ../gitbook_private/_book/* .
-	cp Makefile_bak Makefile
-	echo "blog.runhao.life" >> CNAME # 如果需要替换个人域名，修改这里
+update-gh-pages: build-book exec-gitbook-makefile
 
-	# 5. 添加更改到 git 并提交
-	git add -A
-	git commit -m 'gitbook更新: $(CURRENT_DATE)'
+# 构建新的 GitBook 文档
+build-book:
+	@echo "Building the GitBook..."
+	gitbook build
 
-	# 6. 推送更改到远程的 gh-pages 分支
-	git push -u origin $(BRANCH_NAME)
+# 更新 GitHub Pages
+exec-gitbook-makefile:
+	@echo "Updating GitHub Pages..."
+	$(MAKE) -C ../gitbook
