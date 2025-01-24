@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[runhao 的灵光一闪]]></title>
+        <description><![CDATA[记录一些思考，包括但不限于后台开发、理财、生活]]></description>
+        <link>http://blog.runhao.life/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Fri, 24 Jan 2025 16:47:54 GMT</lastBuildDate>
+        <atom:link href="http://blog.runhao.life/rss" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Runhao Lu]]></author>
+        <managingEditor><![CDATA[szlrhbob@163.com]]></managingEditor>
+        <webMaster><![CDATA[szlrhbob@163.com]]></webMaster>
+        <category><![CDATA[gitbook]]></category>
+        <item>
+            <title><![CDATA[Runhao 的灵光一闪]]></title>
+            <link>http://blog.runhao.life/</link>
+            <guid isPermaLink="true">http://blog.runhao.life/</guid>
+            <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Runhao 的灵光一闪]]></title>
+            <link>http://blog.runhao.life/doc/Introduction.html</link>
+            <guid isPermaLink="true">http://blog.runhao.life/doc/Introduction.html</guid>
+            <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>http://blog.runhao.life/doc/2025/Directory.html</link>
+            <guid isPermaLink="true">http://blog.runhao.life/doc/2025/Directory.html</guid>
+            <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>http://blog.runhao.life/doc/2025/2025-01-24-gitbook-learning.html</link>
+            <guid isPermaLink="true">http://blog.runhao.life/doc/2025/2025-01-24-gitbook-learning.html</guid>
+            <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
+        </item>
+    </channel>
+</rss>

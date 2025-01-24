@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "gitbook-plugin-ancre-navigation": "^1.0.0"
+  }
+}
