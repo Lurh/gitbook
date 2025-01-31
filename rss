@@ -4,7 +4,7 @@
         <description><![CDATA[记录一些思考，包括但不限于后台开发、理财、生活]]></description>
         <link>http://blog.runhao.life/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 31 Jan 2025 03:50:58 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jan 2025 03:52:52 GMT</lastBuildDate>
         <atom:link href="http://blog.runhao.life/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Runhao Lu]]></author>
         <managingEditor><![CDATA[szlrhbob@163.com]]></managingEditor>
@@ -17,22 +17,18 @@
             <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[Runhao 的灵光一闪]]></title>
-            <link>http://blog.runhao.life/doc/Introduction.html</link>
-            <guid isPermaLink="true">http://blog.runhao.life/doc/Introduction.html</guid>
-            <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
-        </item>
-        <item>
             <title><![CDATA[No title]]></title>
             <link>http://blog.runhao.life/doc/2025/Directory.html</link>
             <guid isPermaLink="true">http://blog.runhao.life/doc/2025/Directory.html</guid>
             <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[Gitbook 搭建笔记]]></title>
-            <description><![CDATA[[TOC]]]></description>
-            <link>http://blog.runhao.life/doc/2025/2025-01-24-gitbook-learning.html</link>
-            <guid isPermaLink="true">http://blog.runhao.life/doc/2025/2025-01-24-gitbook-learning.html</guid>
+            <title><![CDATA[个人年度汇算经验]]></title>
+            <description><![CDATA[又到年终，自己习惯在这时候看看自己的小金库，做下年度回顾。
+本人消费物欲比较低，所以不太担心花钱太多，不考虑每笔都记账，太花时间。
+同时为了对自己的资金有个把握，在日常的资金管理中通过对账户管理提前设计，便于快速获取一个近似值。]]></description>
+            <link>http://blog.runhao.life/doc/2025/2025-01-28-revenue-calucate/2025-01-28-revenue-calculate.html</link>
+            <guid isPermaLink="true">http://blog.runhao.life/doc/2025/2025-01-28-revenue-calucate/2025-01-28-revenue-calculate.html</guid>
             <dc:creator><![CDATA[Runhao Lu]]></dc:creator>
         </item>
     </channel>
